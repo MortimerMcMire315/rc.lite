@@ -45,13 +45,10 @@ nmap ga <Plug>(EasyAlign)
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 function! s:goyo_enter()
-    SyntasticToggleMode
     Limelight
 endfunction
 
 function! s:goyo_leave()
-    SyntasticToggleMode
-    SyntasticCheck
     Limelight!
 endfunction
 
@@ -69,13 +66,6 @@ highlight ExtraWhitespace ctermbg=091 guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=091 guibg=red
 match ExtraWhitespace /\s\+$/
 "-----END HIGHLIGHT-----"
-
-"-----SOLARIZED-----"
-syntax enable
-set background=dark
-"let g:solarized_termcolors=256
-colorscheme solarized
-"-----END SOLARIZED-----"
 
 "-----Grep directory for word under cursor-----"
 function Grep()

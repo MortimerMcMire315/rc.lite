@@ -402,7 +402,6 @@ alias ls='ls --color=auto'
 alias dusort="du -a * | sort -n | sed -Ee 's/^[0-9]+./\"/' -e 's/$/\"/' | xargs du -ah"
 alias pac='sudo pacman -S'
 alias pacu='sudo pacman -Syu'
-eval "$(dircolors ~/.dir_colors)"
 export EDITOR='vim'
 export GOPATH=~/.go
 export PATH=$PATH:~/.cabal/bin:~/.go/bin:~/bin:~/.local/bin:~/.gem/ruby/2.4.0/bin
