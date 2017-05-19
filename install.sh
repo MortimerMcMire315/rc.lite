@@ -28,9 +28,11 @@ echo "Installing nginx Vim syntax file..."
 mkdir -p ~/.vim/syntax
 cp nginx.vim ~/.vim/syntax
 
-[[ ! -f ~/.vim/filetype.vim ]] || [[ -z "$(grep nginx ~/.vim/filetype.vim)" ]] &&
+[[ ! -f ~/.vim/filetype.vim ]] || (! grep -q nginx ~/.vim/filetype.vim) &&
 (
     echo "Adding nginx detection to filetype.vim..."
     echo "au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif" >> ~/.vim/filetype.vim
 )
+
+#shellcheck source=/dev/null
 source ~/.bashrc
