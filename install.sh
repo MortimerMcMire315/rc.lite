@@ -9,3 +9,4 @@ vim -c 'VundleInstall' -c 'qa!'
 mkdir -p ~/.vim/syntax
 cp nginx.vim ~/.vim/syntax
 echo "au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif" >> ~/.vim/filetype.vim
+source ~/.bashrc
