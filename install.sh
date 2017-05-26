@@ -1,17 +1,21 @@
 #!/bin/bash
 
-echo "Backing up .bashrc..."
-mv ~/.bashrc ~/.bashrc.bak
+backup() {
+    if [ -f $1 ]; then
+        echo "Backing up $1..."
+        mv $1 $1.bak
+    fi
+}
+
+backup ~/.bashrc
 echo "Installing new .bashrc..."
 cp .bashrc ~/.bashrc
 
-echo "Backing up .tmux.conf..."
-mv ~/.tmux.conf ~/.tmux.conf.bak
+backup ~/.tmux.conf
 echo "Installing new .tmux.conf..."
 cp .tmux.conf ~/.tmux.conf
 
-echo "Backing up .vimrc..."
-mv ~/.vimrc ~/.vimrc.bak
+backup ~/.vimrc
 echo "Installing new .vimrc..."
 cp .vimrc ~/.vimrc
 
