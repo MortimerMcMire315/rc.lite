@@ -19,6 +19,10 @@ backup ~/.vimrc
 echo "Installing new .vimrc..."
 cp .vimrc ~/.vimrc
 
+backup ~/.inputrc
+echo "Installing new .inputrc..."
+cp .inputrc ~/.inputrc
+
 [[ -d ~/.vim/bundle/Vundle.vim ]] ||
 (
     echo "Downloading Vundle..."
