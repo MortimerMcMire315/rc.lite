@@ -130,3 +130,8 @@ noremap  <buffer> <silent> j gj
 "----- Haskell rebindings for fast typing (THAT PUN WAS INCREDIBLE!)-----"
 autocmd BufNewFile,BufRead *.hs inoremap <buffer> <silent> -= <Space>-><Space>
 autocmd BufNewFile,BufRead *.hs inoremap <buffer> <silent> =- <Space>=><Space>
+
+set t_Co=256
+
+set background=dark
+colorscheme solarized

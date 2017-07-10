@@ -36,6 +36,10 @@ echo "Installing nginx Vim syntax file..."
 mkdir -p ~/.vim/syntax
 cp nginx.vim ~/.vim/syntax
 
+echo "Installing Solarized color scheme..."
+mkdir -p ~/.vim/colors
+cp solarized.vim ~/.vim/colors
+
 [[ ! -f ~/.vim/filetype.vim ]] || (! grep -q nginx ~/.vim/filetype.vim) &&
 (
     echo "Adding nginx detection to filetype.vim..."
