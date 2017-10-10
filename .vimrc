@@ -13,6 +13,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'lumiliet/vim-twig'
 
 call vundle#end()
 
