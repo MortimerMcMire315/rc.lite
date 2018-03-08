@@ -23,6 +23,10 @@ backup ~/.inputrc
 echo "Installing new .inputrc..."
 cp .inputrc ~/.inputrc
 
+backup ~/.editrc
+echo "Installing new .editrc..."
+cp .editrc ~/.editrc
+
 echo "Installing Solarized color scheme..."
 mkdir -p ~/.vim/colors
 cp solarized.vim ~/.vim/colors
